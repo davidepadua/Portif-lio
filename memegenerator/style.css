@@ -17,24 +17,26 @@ body {
     border-bottom: 1.5px solid black;
 }
 
-#inpImage {
+#meme-insert {
     position: relative;
     top: -2px;
     margin-left: 5px;
 }
 
 #main-content {
-    width: 55%;
+    display: inline-flex;
 }
 
 .titulo {
     font-family: impact, sans-serif;
 }
 
-.display-field {
+#meme-image-container {
     width: 350px;
     min-height: 250px;
-    border: 2px solid gray;
+    background-color: white;
+    border: 1px solid black;
+    position: relative;
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -61,41 +63,64 @@ body {
 }
 
 .others-pictures {
-    border: 1px solid gray;
+    border: 2px solid gray;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.others-pictures:hover {
+    opacity: 80%;
 }
 
 #others-pictures {
     margin-top: 15px;
-    display: block;
-    position: absolute;
-    right: 145px;
-    top: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 60%;
 }
 
-#top-phrase {
+div p {
+    word-wrap: break-word;
+    margin: 0px;
     font-family: Impact, sans-serif;
-    font-size: 1.25em;
+    font-size: 1.35em;
     color: white;
-    top: 290px;
+    top: 5px;
     position: absolute;
     height: 75px;
-    max-height: 80px;
     overflow: hidden;
-    width: 30%;
-    letter-spacing: 0.25em;
-    text-shadow: 0.5px 0.5px black;
+    width: 100%;
+    letter-spacing: 0.15em;
+    text-shadow: 0.7px 0.7px black;
 }
 
-#bottom-phrase {
-    font-family: Impact, sans-serif;
-    font-size: 1.25em;
+.botao {
+    background-color: rgb(133, 133, 133);
+    border-radius: 5px;
+    border: none;
     color: white;
-    top: 500px;
-    position: absolute;
-    height: 75px;
-    max-height: 80px;
-    overflow: hidden;
-    width: 30%;
-    letter-spacing: 0.25em;
-    text-shadow: 0.5px 0.5px black;
+    text-align: center;
+    padding: 6px 20px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0px 0px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.botao:hover {
+    opacity: 85%;
+}
+
+#button1 {
+    border: 3px dashed red;
+}
+
+#button2 {
+    border: 5px double blue;
+}
+
+#button3 {
+    border: 6px groove green;
 }

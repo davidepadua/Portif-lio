@@ -1,6 +1,6 @@
 function preview(event) {
     var reader = new FileReader();
-    var campo = document.querySelector('.imagem-selecionada');
+    var campo = document.querySelector('#meme-image');
 
     reader.onload = function() {
         if (reader.readyState == 2) {
@@ -15,11 +15,53 @@ let textTop = document.querySelector('#texto-cima');
 console.log(textTop);
 
 function overlaidTop() {
-    let text = document.querySelector('#texto-cima').value;
-    document.querySelector('#top-phrase').innerHTML = text;
+    let text = document.querySelector('#text-input').value;
+    document.querySelector('#meme-text').innerHTML = text;
 }
 
-function overlaidBot() {
-    let text = document.querySelector('#texto-inferior').value;
-    document.querySelector('#bottom-phrase').innerHTML = text;
+function changeborder1() {
+    document.querySelector('#meme-image-container').style.border = "3px dashed red";
+}
+
+function changeborder2() {
+    document.querySelector('#meme-image-container').style.border = "5px double blue";
+}
+
+function changeborder3() {
+    document.querySelector('#meme-image-container').style.border = "6px groove green";
+}
+
+function changeborder4() {
+    document.querySelector('#meme-image-container').style.border = "none";
+}
+
+function toContainer() {
+    var campo = document.querySelector('#meme-image');
+    //campo.src = "imgs/meme1.jpeg";
+    campo.src = document.querySelector('#meme-1').src;
+
+}
+
+function toContainer1() {
+    var campo = document.querySelector('#meme-image');
+    //campo.src = "imgs/meme1.jpeg";
+    campo.src = document.querySelector('#meme-2').src;
+
+
+}
+
+function toContainer2() {
+    var campo = document.querySelector('#meme-image');
+    //campo.src = "imgs/meme1.jpeg";
+    campo.src = document.querySelector('#meme-3').src;
+
+
+}
+
+function toContainer3() {
+    var campo = document.querySelector('#meme-image');
+    //campo.src = "imgs/meme1.jpeg";
+    campo.src = document.querySelector('#meme-4').src;
+
+
 }

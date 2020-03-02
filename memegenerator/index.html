@@ -17,33 +17,41 @@
         <h1 class='titulo cabecalho'> Meme Generator</h1>
     </header>
     <div id='area-selecao'>
-        <h3 class='titulo main'>Selecione sua imagem :<input type="file" id="inpImage" onchange="preview(event)"></h3>
+        <h3 class='titulo main'>Selecione sua imagem :
+            <input type="file" id="meme-insert" onchange="preview(event)">
+        </h3>
         <h3 class='titulo main'>Texto Superior:
-            <input type="text" id="texto-cima" onkeyup="overlaidTop()">
+            <input type="text" id="text-input" onkeyup="overlaidTop()" maxlength="60" />
         </h3>
-        <h3 class='titulo main'>Texto Inferior:
-            <input type="text" id="texto-inferior" onkeyup="overlaidBot()">
-        </h3>
+        <h4>Personalize a sua borda:</h4>
+        <div id="botoes">
+            <button class="botao" id="button1" onclick="changeborder1()">EXEMPLO</button>
+            <button class="botao" id="button2" onclick="changeborder2()">EXEMPLO</button>
+            <button class="botao" id="button3" onclick="changeborder3()">EXEMPLO</button>
+            <button class="botao" id="button4" onclick="changeborder4()">SEM-BORDA</button>
+        </div>
+
+        <h2 class='titulo' id="zumba">Vizualize seu Meme!</h2>
+
     </div>
-    <section id='main-content'>
-        <h2 class='titulo main'>Vizualize seu Meme!</h2>
-        <div class='display-field'>
-            <div id='top-phrase'></div>
-            <div id='bottom-phrase'></div>
-            <img src="" alt="Meme do Usuario" class="imagem-selecionada">
+    <section id='main-content' class=>
+
+        <div id='meme-image-container'>
+            <p id='meme-text'></p>
+            <img src="" alt="Meme do Usuario" class="imagem-selecionada" id="meme-image">
+        </div>
+        <div id='others-pictures'>
+            <img src="imgs/meme1.jpeg" id="meme-1" class="others-pictures" onclick="toContainer()" height="100px">
+            <img src="imgs/meme2.jpeg" id="meme-2" class="others-pictures" onclick="toContainer1()" height="100px">
+            <img src="imgs/meme3.jpeg" id="meme-3" class="others-pictures" onclick="toContainer2()" height="100px">
+            <img src="imgs/meme4.jpeg" id="meme-4" class="others-pictures" onclick="toContainer3()" height="100px">
 
         </div>
     </section>
-    <section id='others-pictures' class="flex">
-        <div>
-            <img src="Images/aragorn.png" class="others-pictures" height="100px">
-            <img src="Images/buzz.png" class="others-pictures" height="100px">
-            <img src="Images/smart.png" class="others-pictures" height="100px">
 
 
 
-        </div>
-    </section>
+
 
     <footer></footer>
 
