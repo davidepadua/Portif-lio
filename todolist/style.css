@@ -1,6 +1,6 @@
 @font-face {
     font-family: kindergarten;
-    src: url("./kindergarten.ttf")
+    src: url(./kindergarten.ttf);
 }
 
 body {
