@@ -111,21 +111,33 @@ aside > div {
 }
 
 .fly {
-  animation: flying 3s alternate 3 forwards 3s;
-  transition: animation steps(500, end);
+  animation: flying 10s forwards 2s;
+  transition: animation steps(1500, end);
 }
 
 @keyframes flying {
 
-  from {
+  0% {
     margin-bottom: 0;
     margin-left: 0;
   }
 
-  to {
+  20% {
     margin-left: 400px;
     margin-top: -550px;
-    transform: scale(1.25);
+    transform: scale(1.45);
+
+  }
+  45%{
+    margin-left: 600px;
+    margin-top: -250px;
+    transform: scale(1);
+
+  }
+  100%{
+    margin-left: 600px;
+    margin-top: -250px;
+    transform: scale(0) translate(1000px,1000px);
 
   }
 }
