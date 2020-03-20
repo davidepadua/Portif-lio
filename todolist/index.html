@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="style.css" media="all">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class='centered'>
+        <h1 id='title'>Minha Lista de Tarefas</h1>
+        <p id='funcionamento'>Clique duas vezes em um item para marcá-lo como completo</p>
+    </header>
+    <div id='firstContent'>
+        <h2>Não posso esquecer de:</h2>
+        <input type='text' id="texto-tarefa" onkeyup="raschunhoTarefa()" class="fonteKinder">
+        <button id="criar-tarefa" onclick="addTarefa()">Adicionar Tarefa</button><br><br>
+    </div>
+    <section id='container'>
+        <div>
+            <ol type='text' id="lista-tarefas" onclick="selecionada(event)" ondblclick="riscadinha(event)">
+
+            </ol>
+
+            <nav id='barraNavegacao'><button id="apaga-tudo" class="fonteKinder" onclick="apagaTudo()" ondblclick="riscadinha()">Apagar Lista</button>
+                <button id="remover-finalizados" class="fonteKinder">Remover Finalizados</button></nav>
+
+        </div>
+    </section>
+    <footer></footer>
+
+</body>
+
+</html>
