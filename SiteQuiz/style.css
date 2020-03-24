@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    background: linear-gradient(white, #d3d8e8);
+    
+}
+header {
+    background-color: #3b5998;
+    color: white;
+    font-family: monospace;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    height: 15vh;    
+    border-bottom: black 1px solid;
+
+}
+header>h1{    
+    justify-self: center;
+    align-self:center;    
+    width: 600px;
+}
+section {
+    background: linear-gradient(white, #d3d8e8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    
+    width: 70vw;
+    height: 3000px;
+}
+.flagContainer{
+    display: flex;
+    flex-direction: row;
+    
+    width:100%;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.flagTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 20PX;
+    display: flex;
+    height: 100%;
+    width: 35%;
+
+}
+.flagTitle>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    width: 50%;
+    height: 50%;
+    
+}
+.flag{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1.75px solid black;
+    
+    width: 65%;
+    height: 100%;
+}
+#Andorra {    
+    background-image: url('./imgs/Andorra.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+#Koreia {    
+    background-image: url('./imgs/korea.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+#Mexico {    
+    background-image: url('./imgs/MEXICO.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+#Cuba {    
+    background-image: url('./imgs/cuba.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+#Espanha {    
+    background-image: url('./imgs/espanha.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+#Groelandia {    
+    background-image: url('./imgs/Flag_of_Greenland.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+#AfricaDoSul {    
+    background-image: url('./imgs/AdoSul.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+#Palestina {    
+    background-image: url('./imgs/palestina.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+#Liberia {    
+    background-image: url('./imgs/LIBERIA.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
