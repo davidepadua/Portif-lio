@@ -32,15 +32,13 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: auto;
-    
+    margin: auto;    
     width: 70vw;
     height: 3000px;
 }
 .flagContainer{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
     width:100%;
     height: 300px;
     border: 2px solid black;
@@ -57,13 +55,13 @@ section {
     width: 35%;
 
 }
-.flagTitle>form {
+form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-self: center;
     width: 50%;
-    height: 50%;
+    height: 80%;
     
 }
 .flag{ 
@@ -75,66 +73,100 @@ section {
     width: 65%;
     height: 100%;
 }
-#Andorra {    
-    background-image: url('./imgs/Andorra.png');
+.flag-mobile {
     background-size: contain;
     background-repeat: no-repeat;
     width: 300px;
     height: 200px;
+}
+#Andorra {    
+    background-image: url('./imgs/Andorra.png');
+
 }
 #Koreia {    
     background-image: url('./imgs/korea.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 200px;
+
 }
 #Mexico {    
     background-image: url('./imgs/MEXICO.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 200px;
+
 }
 #Cuba {    
     background-image: url('./imgs/cuba.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 200px;
+
 }
 #Espanha {    
     background-image: url('./imgs/espanha.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 200px;
+
 }
 #Groelandia {    
     background-image: url('./imgs/Flag_of_Greenland.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 200px;
+
 }
 #AfricaDoSul {    
     background-image: url('./imgs/AdoSul.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 200px;
+
 }
 #Palestina {    
     background-image: url('./imgs/palestina.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 200px;
+
 }
 #Liberia {    
     background-image: url('./imgs/LIBERIA.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 200px;
+
+}
+.btn {
+    height: 35px;
+    align-self: center;
+    justify-self: center;
+    width: 150px;
+}
+.btn-custom{
+    color:white;
+    background-color: #69a74e;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px #a4e388;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 7px 20px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    width:250px;
+}
+
+@media (max-width : 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    section{
+        width: 100vw;
+        height: 2500px;
+    }
+    .flagContainer{
+        width:100%;
+        height: 200px;
+    }
+    .flag{
+        width: 50%;
+    }
+    .flagTitle{
+                
+        width: 50%;
+    }
+    .flag-mobile {
+        width: 200px;
+        height: 125px;
+    }
+    form {
+        
+        width: ;
+
+    }
+
 }
